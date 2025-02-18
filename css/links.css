@@ -1,0 +1,333 @@
+/* 基本样式 */
+:root {
+    --bg-primary: #f1f3f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-color: #333;
+    --hover-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f3f5;
+    color: #333;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+
+}
+
+.friend-link-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* 项目之间的间距 */
+    justify-content: center;
+    margin: 10px 20px 10px 20px;
+}
+
+/* 项目卡片 */
+.links-card {
+    position: relative;
+    padding: 1.2rem;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    break-inside: avoid;
+    flex: 1 1 49.5%;
+    /* 每个项目卡片占48%的宽度，留出2%的间距 */
+    max-width: 49.5%;
+    /* 防止项目卡片宽度超过48% */
+}
+
+@media (max-width: 768px) {
+    .links-card {
+        flex: 1 1 100%;
+        /* 在小屏幕设备上，每行显示一个项目 */
+        max-width: 100%;
+    }
+}
+
+.links-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    /*background: rgba(17, 17, 17, 0.4);*/
+}
+
+.links-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--bg-primary);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.links-image:hover {
+    transform: scale(1.02);
+}
+
+.links-content h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.links-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.links-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.links-links a:hover {
+    background: var(--hover-color);
+    border-color: var(--accent-color);
+}
+
+.links-links i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .links-card {
+        padding: 1.2rem;
+    }
+
+    .links-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .links-links a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-card {
+        padding: 1rem;
+    }
+
+    .links-links {
+        flex-direction: column;
+    }
+
+    .links-links a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* 页脚 */
+footer {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    /* 毛玻璃效果 */
+    /* border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);  添加白色底部边框 */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    /*添加阴影*/
+}
+
+.footer-content {
+    position: relative;
+    padding: 2rem 1rem;
+    /*background: rgba(17, 17, 17, 0.7);*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.footer-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(120deg,
+            #ffffff 0%,
+            var(--accent-color) 50%,
+            #1B92F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+.logo-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    border-radius: 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.footer-link i {
+    color: var(--accent-color);
+}
+
+.footer-link img {
+    height: 16px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-info {
+        align-items: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .footer-link {
+        width: 100%;
+        justify-content: center;
+    }
+}

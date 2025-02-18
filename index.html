@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="description" content="欢迎访问我们的工作室官网，我们专注于创意设计与开发。">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>粼光工作室</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" data-target="home">首页</a></li>
+                <li><a href="#about" data-target="about">关于</a></li>
+                <li><a href="#projects" data-target="projects">项目</a></li>
+                <li><a href="#members" data-target="members">成员</a></li>
+                <li><a href="#contact" data-target="contact">联系</a></li>
+                <a href="../links.html">友链</a>
+            </ul>
+            <div class="indicator"></div> <!-- 用于显示指示器 -->
+        </nav>
+    </header>
+
+    <!-- 首页 -->
+    <section id="home">
+        <img src="favicon.png" class="hero-avatar">
+        <div class="hero">
+            <h1>粼光工作室</h1>
+            <p>“当光照向水面，波浪就有了颜色”</p>
+            <br>
+            <button onclick="scrollToSection('projects')">
+                <i class="fas fa-rocket"></i>
+                <b>查看项目</b>
+            </button>
+            <button onclick="scrollToSection('about')" style="background: #fff; color: var(--text-primary);border-color: #fff;">
+                <i class="fas fa-user"></i>
+                <b>了解我们</b>
+            </button>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about">
+    <div style="text-align: center; display: flex; align-items: center; flex-direction: row;">
+    <h2 class="page-title"><b>|</b>关于我们</h2>
+    </div>
+        <div class="about-section">
+            <h3>粼光简介</h3>
+            <p>你好！欢迎来到<strong>粼光工作室</strong>，让我们无限进步。</p>
+            <blockquote>
+                岁月如歌，我们的爱在时光的长河中泛起波光粼粼，温柔又璀璨，仿佛每一寸回忆都被镀上了金色的光辉。
+            </blockquote>
+            <p>成分复杂，人才丰富。</p>
+        </div>
+        <div class="about-section" style="margin-top: 10px;">
+            <h3>目标与愿景</h3>
+            <p>热爱永不降温，我们的目标是：</p>
+            <ul class="about-list">
+                <li>1. 摆烂二十四小时</li>
+                <li>2. 摆烂一个星期</li>
+                <li>3. 摆烂一个月</li>
+                <li>4. 摆烂一整年</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="section">
+        <h2 class="page-title"><b>|</b>项目展示</h2>
+        <div class="card">
+            <div class="project-card">
+                <img src="../img/lgboxs.jpg" alt="TuneFree项目预览" class="project-image">
+                <div class="project-content">
+                    <h3>粼光开源集</h3>
+                    <p>粼光开源集，开元新生态。</p>
+                    <!--
+                    <div class="project-tech">
+                        <span><i class="fas fa-atom"></i> Electron</span>
+                        <span><i class="fab fa-vuejs"></i> Vue3</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="star-count"><i class="fas fa-star"></i> <img src="https://img.shields.io/github/stars/GSQZ/TuneFree?style=flat&color=yellow" alt="GitHub stars"></span>
+                    </div>
+                    -->
+                    <div class="project-links">
+                        <a href="https://lgboxs.com" target="_blank"><i class="fas fa-globe"></i> 官网</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://linguang.jibukeshi.us.kg/images/drawerHeader.png" alt="TuneFree项目预览" class="project-image">
+                <div class="project-content">
+                    <h3>粼光应用商店</h3>
+                    <p>粼光应用商店旧版项目地址</p>
+                    <!--
+                    <div class="project-tech">
+                        <span><i class="fas fa-atom"></i> Electron</span>
+                        <span><i class="fab fa-vuejs"></i> Vue3</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="star-count"><i class="fas fa-star"></i> <img src="https://img.shields.io/github/stars/GSQZ/TuneFree?style=flat&color=yellow" alt="GitHub stars"></span>
+                    </div>
+                    -->
+                    <div class="project-links">
+                        <a href="https://linguang.jibukeshi.us.kg/" target="_blank"><i class="fas fa-globe"></i> 官网</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 成员 -->
+    <section id="members" class="section">
+        <h2 class="page-title"><b>|</b>粼光成员</h2>
+        <div class="container">
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2034635947&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>秋歌<b>创始人</b></h3>
+                    <p>在吗？要不要一起改变世界</p>
+                </div>
+                <div class="member-links">
+                    <!--<a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>-->
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=2034635947&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:2034635947@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=1298589907&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>小白BZS<b>全栈</b></h3>
+                    <p>永远相信美好的事情即将发生</p>
+                </div>
+                <div class="member-links">
+                    <a href="https://github.com/XiaoBaiBZS" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=1298589907&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:1298589907@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2055675594&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>杰西205<b>全栈</b></h3>
+                    <p>你好，你好，你好-你好-你好!</p>
+                </div>
+                <div class="member-links">
+                    <a href="https://github.com/Jesse205/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=2055675594&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:2055675594@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2113590144&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>无与伦比<b>全栈</b></h3>
+                    <p>想象依然无限大，音乐依然范特西</p>
+                </div>
+                <div class="member-links">
+                    <a href="weixin://biz/ww/kefu/https://work.weixin.qq.com/kfid/kfc169b5732ff8bc9a5?schema=1&refkey=AQEAQx8O8RzPtTGuMMOK1XEzm1i5JJGmG371ZSijNl6PGOWHCssQ9wDaW0-YZs1JfCQN" target="_blank"><i class="fa-brands fa-weixin"></i></a>
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=2113590144&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:2113590144@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+                <div style="margin-top: 10px;" class="member-links">
+                    <a href="https://m.bilibili.com/space/501394812" target="_blank"><i class="fa-brands fa-bilibili"></i></a>
+                    <a href="https://www.jayhome.cc" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=3290712646&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>机不可失<b>安卓开发</b></h3>
+                    <p>机不可失，失不再来</p>
+                </div>
+                <div class="member-links">
+                    <a href="https://jibukeshi.us.kg" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=3290712646&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:3290712646@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=978295994&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>笨笨<b>前端</b></h3>
+                    <p>介绍~或者~标语？</p>
+                </div>
+                <div class="member-links">
+                    <!--<a href="https://blog.xiaoioi.top/" target="_blank"><i class="fa-solid fa-blog"></i></a>-->
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=978295994&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:xiaoikun@foxmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="https://q.qlogo.cn/headimg_dl?dst_uin=1902119341&spec=640&img_type=jpg" class="member-image">
+                <div class="member-content">
+                    <h3>Hao<b>前端</b></h3>
+                    <p>代码改变世界，热爱永不降温</p>
+                </div>
+                <div class="member-links">
+                    <a href="https://haonp.top" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                    <a href="mqq://card/show_pslcard?src_type=internal&version=1&uin=1902119341&card_type=person&source=sharecard" target="_blank"><i class="fab fa-qq"></i></a>
+                    <a href="mailto:1902119341@qq.com" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!--
+        <div class="pagination">
+            <button class="member-button" onclick="prevPage()">上一页</button>
+            <div class="page-indicators">
+                <span class="indicator active" onclick="goToPage(1)">1</span>
+                <span class="indicator" onclick="goToPage(2)">2</span>
+            </div>
+            <button class="member-button" onclick="nextPage()">下一页</button>
+        </div>
+        -->
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact">
+        <h2 class="page-title"><b>|</b>联系我们</h2>
+        <div class="contact-cards">
+            <a href="https://qm.qq.com/q/43B3BaZNfq" target="_blank" class="contact-card">
+                <img src="../img/qq.png" class="contact-image">
+                <b>QQ</b>
+            </a>
+
+            <a href="mailto:2034635947@qq.com" target="_blank" class="contact-card">
+                <img src="../img/qqmail.png" class="contact-image">
+                <b>邮箱</b>
+            </a>
+
+            <a href="http://www.coolapk.com/u/4302326" target="_blank" class="contact-card">
+                <img src="../img/kuan.png" class="contact-image">
+                <b>酷安</b>
+            </a>
+
+            <a href="https://bilibili.com" target="_blank" class="contact-card">
+                <img src="../img/bilibili.png" class="contact-image">
+                <b>B站</b>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-text">LinGung</span>
+                        <span class="logo-dot"></span>
+                        <span class="logo-text">TOP</span>
+                    </div>
+                    <p class="footer-copyright">© 2025 粼光工作室</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://beian.miit.gov.cn/" target="_blank" class="footer-link">
+                        <i class="fas fa-shield-alt"></i>
+                        还没有备案哦
+                    </a>
+                    <a href="https://www.github.com/" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub 提供部署支持</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
